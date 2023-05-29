@@ -1,0 +1,22 @@
+<maui:ContentPage xmlns="http://schemas.microsoft.com/winfx/2009/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                   xmlns:maui="clr-namespace:Microsoft.Maui.Controls;assembly=Microsoft.Maui"
+                   x:Class="MauiApp1.CRUDPage"
+                   Title="CRUD">
+
+    <maui:Grid BackgroundColor="#FFFFFF">
+        <maui:Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </maui:Grid.RowDefinitions>
+
+        <Label Text="Sistema de Carros" FontSize="20" HorizontalOptions="Center" Margin="0,0,0,20" />
+
+        <maui:StackLayout Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center">
+            <maui:Button Text="Crear" Clicked="Crear_Click" Margin="0,0,0,10" />
+            <maui:Button Text="Leer" Clicked="Leer_Click" Margin="0,0,0,10" />
+            <maui:Button Text="Actualizar" Clicked="Actualizar_Click" Margin="0,0,0,10" />
+            <maui:Button Text="Eliminar" Clicked="Eliminar_Click" Margin="0,0,0,10" />
+        </maui:StackLayout>
+    </maui:Grid>
+</maui:ContentPage>

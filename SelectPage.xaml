@@ -1,0 +1,51 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.SelectPage"
+             Title="SelectPage">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="backgroundColor">#000000</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="{StaticResource backgroundColor}">
+            <StackLayout Orientation="Horizontal">
+                <Grid>
+                    <Image Source="gT.gif" />
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" />
+                    <Label Text="GRAN TURISMO" HorizontalOptions="Center" TextColor="White" />
+                </Grid>
+
+                <Grid>
+                    <Image Source="hH.gif" />
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" />
+                    <Label Text="HOT HATCH" HorizontalOptions="Center" TextColor="White" />
+                </Grid>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Grid>
+                    <Image Source="mC.gif" />
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" />
+                    <Label Text="MUSCLE CAR" HorizontalOptions="Center" TextColor="White" />
+                </Grid>
+
+                <Grid>
+                    <Image Source="r.gif" />
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" />
+                    <Label Text="ROADSTER" HorizontalOptions="Center" TextColor="White" />
+                </Grid>
+
+                <Grid>
+                    <Image Source="sC.gif" />
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" />
+                    <Label Text="SUPER CAR" HorizontalOptions="Center" TextColor="White" />
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>

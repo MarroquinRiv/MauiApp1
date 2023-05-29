@@ -1,0 +1,26 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage"
+             Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/carBG.jpg"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="SUPER VEHÍCULOS" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36"/>
+
+        <TextBlock Text="SUPER POTENCIA" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20">
+            <Button Text="EMPEZAR" Clicked="btnEmpezar_Click" BackgroundColor="Red" TextColor="White" FontSize="24"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>
